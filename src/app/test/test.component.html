@@ -1,1 +1,22 @@
-<p>test works!</p>
+<div class="container p-3">
+    <table class="table table-striped border">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of data">
+                <tr>
+                    <th scope="row">{{ item.id }}</th>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.website }}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
